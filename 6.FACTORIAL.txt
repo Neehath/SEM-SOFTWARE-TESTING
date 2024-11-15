@@ -1,0 +1,34 @@
+package FACTORIAL;
+
+public class FACT {
+        public int factorial(int n)
+        {
+        	if(n<0)
+        	{
+        		return 0;
+        	}
+        	int fact=1;
+        	for(int i=1;i<=n;i++)
+        	{
+        		fact=fact*i;
+        	}
+        	return fact;
+        }
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+package FACTORIAL;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class FACTTEST {
+
+	@Test
+	void test() {
+		FACT X=new FACT();
+		assertEquals(120,X.factorial(5));
+	}
+
+}

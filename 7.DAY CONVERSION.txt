@@ -1,0 +1,35 @@
+package DAYTOMONTHYEAR;
+
+public class DAYCVT {
+           public int[] convert(int day)
+           {
+        	   if(day<0)
+        	   {
+        		   return new int[] {0,0,0};
+        	   }
+        	   int year=day/365;
+        	   day=day%365;
+        	   int month=day/30;
+        	   day=day%30;
+        	   return new int[] {year,month,day}; 
+           }
+}
+
+++++++++++++++++++++++++++++++++++++++++++
+
+package DAYTOMONTHYEAR;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class DAYCVTTEST {
+
+	@Test
+	void test() {
+		DAYCVT X=new DAYCVT();
+		assertArrayEquals(new int[] {1,0,0},X.convert(365));
+	}
+
+}
+

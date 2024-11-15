@@ -1,0 +1,38 @@
+package PALINDROME;
+
+public class PAL {
+	public boolean num(int n)
+	{
+		if(n<0)
+		{
+			return false;
+		}
+		int orig=n;
+		int sum=0;
+		while(n!=0)
+		{
+			int rem=n%10;
+			sum=sum*10+rem;
+			n=n/10;
+		}
+		return orig==sum;
+	}
+
+}
++++++++++++++++++++++++++++++++++++++++++++++
+
+package PALINDROME;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class PALTEST {
+
+	@Test
+	void test() {
+		PAL A=new PAL();
+		assertTrue(A.num(121));
+	}
+
+}

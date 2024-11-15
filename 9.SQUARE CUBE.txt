@@ -1,0 +1,33 @@
+package tests;
+
+public class UnitTesting {
+public int square(int n) {
+	return n*n;
+}
+public int cube(int z)
+{
+	return z*z*z;
+}
++++++++++++++++++++++++++++++++++++++++
+
+package tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class squareUnit {
+
+	@Test
+	public void test() {
+		UnitTesting obj1 = new UnitTesting();
+		int output = obj1.square(4);
+		int output2=obj1.cube(2);
+		
+		assertEquals(16,output);
+		assertEquals(8,output2);
+	}
+
+}
+
+}

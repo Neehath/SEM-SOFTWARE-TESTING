@@ -1,0 +1,34 @@
+package VOTE;
+
+public class VOTE1 {
+	public String age(int n) {
+		if(n<18)
+		{
+			return("not eligible");
+		}
+		else if(n>18)
+		{
+			return("eligible");
+		}
+		return null;
+	}
+
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+package VOTE;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class VOTETEST {
+
+	@Test
+	void test() {
+		VOTE1 X= new VOTE1();
+		assertEquals("eligible",X.age(19));
+	}
+
+}
+

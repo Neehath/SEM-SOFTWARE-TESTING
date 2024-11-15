@@ -1,0 +1,50 @@
+package CONVERTER;
+
+public class BIN {
+	public String tobin(int num)
+	{
+		if(num<0)
+		{
+			return null;
+		}
+		return Integer.toBinaryString(num);
+	}
+
+}
+
+++++++++++++++++++++++++++++++++++++++++++
+
+package CONVERTER;
+
+public class OCT {
+	public String tooct(int numb)
+	{
+		if(numb<0)
+		{
+			return null;
+		}
+		return Integer.toOctalString(numb);
+	}
+
+}
+
+++++++++++++++++++++++++++++++++++++++
+
+package CONVERTER;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class OCTBINTEST {
+
+	@Test
+	void test() {
+		BIN a=new BIN();
+		OCT b=new OCT();
+		assertEquals("1010",a.tobin(10));
+		assertEquals("12",b.tooct(10));
+	}
+
+}
+

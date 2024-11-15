@@ -1,0 +1,30 @@
+package SIMPLEINTREST;
+
+public class SI {
+	public int check(int p ,int n ,int r)
+	{
+		if(p<0 || n<0 || r<0) {
+			return 0;
+			
+		}
+		return p*n*r/100;
+	}
+
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+package SIMPLEINTREST;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class SITEST {
+
+	@Test
+	void test() {
+		SI V= new SI();
+		assertEquals(100,V.check(1000,5,2));
+	}
+
+}
