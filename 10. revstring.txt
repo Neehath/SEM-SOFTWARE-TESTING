@@ -1,0 +1,30 @@
+package SAA;
+
+public class SAA {
+         public String anss(String str)
+         {
+        	 if(str==null)
+        	 {
+        		 return null;
+        	 }
+        	 StringBuilder sb=new StringBuilder(str);
+        	 return sb.reverse().toString();
+         }
+}
+
+----------------------------------------------------------------
+package SAA;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class dsa {
+
+	@Test
+	void test() {
+		SAA X= new SAA();
+		assertEquals("ias",X.anss("sai"));
+	}
+
+}
