@@ -1,23 +1,12 @@
+package SHIV;
 import org.openqa.selenium.chrome.ChromeDriver;
-public class CHB {
+public class POVERTY {
 
 	public static void main(String[] args) {
-		
+		System.setProperty("webdriver.Chrome.Driver","C:\\webdriver\\CromeDriver\\CurrentVersion\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http:\\in.youtube.com");
 
-		 
-		        // Set the path to the ChromeDriver executable
-		        System.setProperty("webdriver.Chrome.Driver","C:\\webdriver\\CromeDriver\\CurrentVersion\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-		        
-		        // Create an instance of ChromeDriver
-		        ChromeDriver driver = new ChromeDriver();
-		        
-		        // Open a URL
-		        driver.get("https://google.com");
-		        
-		    }
-		}
+	}
 
-
-	
-
-
+}
